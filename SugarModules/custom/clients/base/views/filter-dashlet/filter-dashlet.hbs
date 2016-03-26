@@ -1,0 +1,17 @@
+{{#if filterData}}
+<table class="table">	
+	<tr>
+		<td><b>{{str 'LBL_MODULE'}}</b></td>
+		<td><b>{{str 'LBL_FILTER'}}</b></td>
+	</tr>
+{{#each filterData}}
+	<tr>
+		<td>{{this.module_name}}</td>
+		<td>{{this.name}}</td>
+	</tr>
+{{/each}}
+	</table>
+{{else}}
+    <div class="block-footer">{{str "LBL_NO_DATA_AVAILABLE"}}</div>
+{{/if}}
+
